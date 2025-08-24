@@ -1,27 +1,24 @@
-# Personalized Job Recommender System
-This repository contains the source code and data for a personalized job recommender system, developed as a major course output for DATA102. The project aims to address the challenges job seekers face when navigating the overwhelming number of job listings across various online platforms.
+# Web Scraping
 
-The core of this system is a personalized recommendation engine that scrapes job search websites and provides highly relevant, customized job opportunities to each user. By doing so, it significantly reduces the time, effort, and stress associated with a traditional job search.
+This repository contains the source code for Homework 1 of DATA102, which focuses on web scraping. The project involves extracting data from a specified website, in this case, itch.io, to create a dataset of indie games.
 
-# Problem Statement
-The modern job market is saturated with job postings on diverse platforms, leading to a generic and often frustrating browsing experience for job seekers. They are forced to manually filter through countless irrelevant listings and re-enter qualifications repeatedly. This project tackles this issue by providing a more intelligent, efficient, and personalized solution.
+# Collaborators
 
-# Collaborators:
-- Hinolan, Charles
-- Lasala, Kyle
-- Lorenzo, Antonio
-- Roco, Katrina
+- Kyle Carlo Lasala
+- Katrina Bianca Roco
+- Antonio Jose Maria Lorenzo
+- Charles Joseph Hinolan
 
-# How it Works
-The system operates by performing a series of interconnected steps to deliver personalized recommendations:
+# Methodology
 
-1. Scraping Job Listings: The system gathers raw data from multiple job search websites. This process is more sophisticated than a simple crawl; it is designed to extract key information from each listing, including the job title, company, full description, required skills, and location. This ensures the recommendation engine has a rich dataset to work with.
+The notebook outlines a step-by-step process for multithreaded web scraping:
 
-2. User Profiling: The system creates a detailed profile for each user. This goes beyond a basic resume by incorporating user-provided information such as their career goals, preferred industries, and salary expectations. This comprehensive profile serves as the benchmark against which job listings are compared.
-    
-3. Content-Based Filtering with Semantic Analysis: This is the heart of the recommendation engine. By using advanced natural language processing models from the sentence-transformers library, the system transforms both the user's profile and the job descriptions into numerical vectors (embeddings). This allows the system to understand the semantic meaning and context of the text, rather than just matching keywords. It then calculates the similarity between the user's profile vector and the vector of each job listing to identify the most relevant opportunities.
+1. Library Imports: All necessary libraries are imported at the beginning.
 
-4. Generating Recommendations: After a comprehensive similarity analysis, the system presents a curated and ranked list of job opportunities. The results are highly tailored to the individual user’s needs, and the ranking ensures that the most relevant and suitable jobs are displayed at the top. This final output is a list of highly personalized recommendations that significantly streamline the job search process.
+2. Web Scraping: The core logic uses a combination of Selenium and Requests, along with multithreading, to navigate itch.io and gather data on various games, including their titles, authors, genres, and other relevant details, more efficiently.
 
+3. Data Parsing: Beautiful Soup is employed to parse the raw HTML data and extract the required information cleanly.
 
-This project notebook provides a detailed walkthrough of the data collection, model development, and implementation process.
+4. Data Storage: The extracted data is then structured and stored, likely in a Pandas DataFrame, for further analysis and eventual export.
+
+This project demonstrates a practical application of web scraping techniques for data collection, a fundamental skill in data science and analysis.
