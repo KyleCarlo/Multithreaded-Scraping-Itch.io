@@ -7,7 +7,6 @@ The core of this system is a personalized recommendation engine that scrapes job
 The modern job market is saturated with job postings on diverse platforms, leading to a generic and often frustrating browsing experience for job seekers. They are forced to manually filter through countless irrelevant listings and re-enter qualifications repeatedly. This project tackles this issue by providing a more intelligent, efficient, and personalized solution.
 
 # Collaborators:
-- Guerra, Angelo
 - Hinolan, Charles
 - Lasala, Kyle
 - Lorenzo, Antonio
@@ -23,5 +22,6 @@ The system operates by performing a series of interconnected steps to deliver pe
 3. Content-Based Filtering with Semantic Analysis: This is the heart of the recommendation engine. By using advanced natural language processing models from the sentence-transformers library, the system transforms both the user's profile and the job descriptions into numerical vectors (embeddings). This allows the system to understand the semantic meaning and context of the text, rather than just matching keywords. It then calculates the similarity between the user's profile vector and the vector of each job listing to identify the most relevant opportunities.
 
 4. Generating Recommendations: After a comprehensive similarity analysis, the system presents a curated and ranked list of job opportunities. The results are highly tailored to the individual user’s needs, and the ranking ensures that the most relevant and suitable jobs are displayed at the top. This final output is a list of highly personalized recommendations that significantly streamline the job search process.
+
 
 This project notebook provides a detailed walkthrough of the data collection, model development, and implementation process.
