@@ -1,6 +1,6 @@
 # Web Scraping
 
-This repository contains the source code for Homework 1 of DATA102, which focuses on web scraping. The project involves extracting data from a specified website, in this case, itch.io, to create a dataset of indie games.
+This repository contains the source code focusing on web scraping. The project involves extracting data from a specified website, in this case, itch.io, to create a dataset of indie games.
 
 # Collaborators
 
@@ -22,3 +22,4 @@ The notebook outlines a step-by-step process for multithreaded web scraping:
 4. Data Storage: The extracted data is then structured and stored, likely in a Pandas DataFrame, for further analysis and eventual export.
 
 This project demonstrates a practical application of web scraping techniques for data collection, a fundamental skill in data science and analysis.
+
